@@ -2,6 +2,7 @@
 var socket = io();
 
 console.log('I MADE IT TO THE CLIENT');
+console.log('the socket',socket)
 //Query DOM
 var message = document.getElementById('message'), 
     handle = document.getElementById('handle'),
