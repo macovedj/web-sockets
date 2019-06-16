@@ -1,5 +1,5 @@
 //Make connection
-var socket = io();
+var socket = io('http://localhost:4000');
 
 console.log('I MADE IT TO THE CLIENT');
 console.log('the socket',socket)
