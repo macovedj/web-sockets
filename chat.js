@@ -11,6 +11,7 @@ var message = document.getElementById('message'),
 
 //Emit events
 btn.addEventListener('click', function(){
+  console.log('client knows button got clicked')
   socket.emit('chat', {
     message: message.value,
     handle: handle.value
