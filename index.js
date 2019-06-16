@@ -8,7 +8,7 @@ var server = app.listen(4000, function(){
 });
 
 //Static files
-app.use(express.static('public'));
+app.use(express.static('.'));
 
 //Socket setup
 var io = socket(server);
