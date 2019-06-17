@@ -4,9 +4,10 @@ var path = require('path');
 
 //App setup
 var app = express();
+console.log('**************',process.env.PORT)
 const filePath = path.join(__dirname, 'index.html');
 var server = app.use(express.static('.'),(req, res) => res.sendFile(filePath))
-.listen(4000, function(){
+.listen(process.env.PORT || 4000, function(){
   console.log('listening to port 4000');
 });
 

@@ -1,5 +1,5 @@
 //Make connection
-var socket = io(window.location.hostname);
+var socket = io.connect(window.location);
 
 console.log('I MADE IT TO THE CLIENT');
 console.log('the socket',socket)
