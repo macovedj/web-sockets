@@ -1,8 +1,9 @@
 //Make connection
-var socket = io('http://localhost:4000');
+var socket = io(window.location.href);
 
 console.log('I MADE IT TO THE CLIENT');
 console.log('the socket',socket)
+console.log('HOSTNAME', window.location);
 //Query DOM
 var message = document.getElementById('message'), 
     handle = document.getElementById('handle'),
